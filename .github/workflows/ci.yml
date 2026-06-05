@@ -10,7 +10,7 @@ jobs:
              uses: action/checkout@v4
 
            - name: ci
-             run: mvn cleam
+             run: mvn clean install
             
 
 
