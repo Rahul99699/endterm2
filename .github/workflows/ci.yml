@@ -1,13 +1,13 @@
 name: ci-cd
 on:
-    push
+    push:
 jobs:
     build:
-        runs-on: ubuntu:latest
+        runs-on: ubuntu-latest
 
         steps:
            - name: transfering the data
-             uses: action/checkout@v4
+             uses: actions/checkout@v4
 
            - name: ci
              run: mvn clean install
